@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="da">
 <head>
@@ -69,6 +68,25 @@
         .contact-info p {
             margin: 5px 0;
         }
+        .product-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .product-item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+        .product-item img {
+            width: 100%;
+            height: auto;
+        }
+        .product-item p {
+            margin: 10px;
+        }
     </style>
 </head>
 <body>
@@ -79,6 +97,7 @@
 
 <nav>
     <a href="#hjem">Hjem</a>
+    <a href="#produkter">Produkter</a>
     <a href="#om">Om</a>
     <a href="#kontakt">Kontakt</a>
 </nav>
@@ -86,14 +105,28 @@
 <section id="hjem">
     <h2>Personlige Produkter</h2>
     <p>Vi specialiserer os i at skabe unikke og personlige produkter, der er skræddersyet til dine behov. Vores håndlavede design kombinerer kreativitet og kvalitet.</p>
-    <p>Vores produkter inkluderer:</p>
-    <ul>
-        <li>Personlige krus med navn eller foto</li>
-        <li>Unikke plakater og billeder</li>
-        <li>Specialdesignede T-shirts</li>
-        <li>Tilpassede smykker og meget mere!</li>
-    </ul>
-    <p>Kontakt os for at få dit helt eget personlige design!</p>
+</section>
+
+<section id="produkter">
+    <h2>Produkter</h2>
+    <div class="product-list">
+        <div class="product-item">
+            <img src="https://via.placeholder.com/300" alt="Produkt 1">
+            <p>Krus med personlig tekst</p>
+        </div>
+        <div class="product-item">
+            <img src="https://via.placeholder.com/300" alt="Produkt 2">
+            <p>Unikke plakater og billeder</p>
+        </div>
+        <div class="product-item">
+            <img src="https://via.placeholder.com/300" alt="Produkt 3">
+            <p>Specialdesignede T-shirts</p>
+        </div>
+        <div class="product-item">
+            <img src="https://via.placeholder.com/300" alt="Produkt 4">
+            <p>Tilpassede smykker</p>
+        </div>
+    </div>
 </section>
 
 <section id="om">
@@ -120,6 +153,10 @@
 <footer>
     <p>Lavet med ❤️ af Missartdk</p>
 </footer>
+
+</body>
+</html>
+
 
 </body>
 </html>
