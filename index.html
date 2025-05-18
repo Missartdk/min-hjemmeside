@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Min Enkle Hjemmeside</title>
+    <title>Missartdk - Personlige Produkter</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -41,12 +42,39 @@
             margin: 20px 0;
             color: #777;
         }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input, textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Velkommen til Min Enkle Hjemmeside!</h1>
+    <h1>Missartdk - Personlige Produkter</h1>
 </header>
 
 <nav>
@@ -56,22 +84,41 @@
 </nav>
 
 <section id="hjem">
-    <h2>Hjem</h2>
-    <p>Dette er en enkel hjemmeside, lavet for at vise, hvor nemt det er at have sin egen side på internettet uden at bruge penge!</p>
+    <h2>Personlige Produkter</h2>
+    <p>Vi specialiserer os i at skabe unikke og personlige produkter, der er skræddersyet til dine behov. Vores håndlavede design kombinerer kreativitet og kvalitet.</p>
+    <p>Vores produkter inkluderer:</p>
+    <ul>
+        <li>Personlige krus med navn eller foto</li>
+        <li>Unikke plakater og billeder</li>
+        <li>Specialdesignede T-shirts</li>
+        <li>Tilpassede smykker og meget mere!</li>
+    </ul>
+    <p>Kontakt os for at få dit helt eget personlige design!</p>
 </section>
 
 <section id="om">
-    <h2>Om</h2>
-    <p>Her kan du skrive lidt om dig selv, dit projekt eller din virksomhed. Alt sammen nemt og gratis.</p>
+    <h2>Om Missartdk</h2>
+    <p>Hos Missartdk er vi passionerede omkring kreativitet og personlighed. Vores mission er at levere produkter, der ikke kun er smukke, men også betydningsfulde for vores kunder.</p>
 </section>
 
 <section id="kontakt">
     <h2>Kontakt</h2>
-    <p>Du kan tilføje dine kontaktoplysninger her, som e-mail eller sociale medier.</p>
+    
+    <div class="contact-info">
+        <p><strong>Email:</strong> missartdk@gmail.com</p>
+        <p><strong>Telefon:</strong> +45 40935115</p>
+    </div>
+
+    <form> 
+        <input type="text" placeholder="Dit navn" required>
+        <input type="email" placeholder="Din e-mail" required>
+        <textarea placeholder="Din besked" rows="5" required></textarea>
+        <button type="submit">Send Besked</button>
+    </form>
 </section>
 
 <footer>
-    <p>Lavet med ❤️ af dig</p>
+    <p>Lavet med ❤️ af Missartdk</p>
 </footer>
 
 </body>
